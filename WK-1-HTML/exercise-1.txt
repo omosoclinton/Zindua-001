@@ -1,0 +1,8 @@
+
+Exercise
+Create a personal portfolio with different pages
+About Page
+Education Page
+Interests/Hobbies Page
+Link the various pages to each page. 
+Make use of images and various formatting elements.
