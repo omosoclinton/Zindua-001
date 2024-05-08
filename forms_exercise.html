@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <div>
+        <h4>Personal Profile Form</h4>
+        <p>The following form includes various Information needed for
+            submission of your application. Fill it duly and then save and submit.
+        </p>       
+    </div>
+    <div>
+        <h5>Personal Information</h5>
+        <form>
+            <label for="name">Your full name: </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="dob">Enter your date of birth:</label>
+            <input type="date" name="date" id="dob" min="1980-01-01" max="2010-12-31">
+            <br>
+            <label for="gender" name="gender">Gender assigned at birth</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="others">Prefer not to say</label>
+            <input type="radio" name="gender" id="others">
+            <br>
+            <label for="nationality">Nationality</label>
+            <input type="text" name="nationality">
+        </form>
+   
+    </div>
+    <div>
+        <h5>Education Background</h5>
+        <p>Enter the schools attended and education achievements attained</p>
+        <form>
+            <label for="highschol">Highschool</label>
+            <input type="text" name="highschool" id="highschol">
+            <label for="year">Year attained</label>
+            <input type="month" name="year" id="year" name="start" min="1980-01" max="2023-12" placeholder="yyyy-mm">
+            <br>
+            <br>
+            <label for="university">University</label>
+            <input type="text" name="university" id="university">
+            <label for="year">Year attained:</label>
+            <input type="month" name="year" id="year" name="start" min="1980-01" max="2023-12" placeholder="yyyy-mm">
+        </form>
+    </div>
+    <div>
+        <h5>Professional Certificates</h5>
+        <p>Check any of the professional certicates attained, or write any other</p>
+        <form>
+            <label for="python">Certified Python Programmer</label>
+            <!-- <br> -->
+            <input type="checkbox" name="python" id="python" value="Certified Python Programmer">
+            <br>
+            <label for="javascript">Certified JavaScript Programmer</label>
+            <!-- <br> -->
+            <input type="checkbox" name="javascript" id="javascript" value="Certified JavaScript Programmer">
+            <br>
+            <label for="react">Certified React Programmer</label>
+            <!-- <br> -->
+            <input type="checkbox" name="react" id="react" value="Certified React Programmer">
+            <br>
+            <label for="Java">Certified Java Programmer</label>
+            <!-- <br> -->
+            <input type="checkbox" name="java" id="java" value="Certified Java Programmer">
+            <br>
+            <label for="others">Other</label>
+            <input type="text" name="others" id="others">
+        </form>
+
+    </div>
+    <div>
+        <h5>Extra-Curricular Activities</h5>
+        <p>Check any of the extra- curricular activities</p>
+        <form>
+            <label for="athletics">Athletics</label>
+            <input type="checkbox" name="athletics" id="athletics" value="Athletics">
+            <br>
+            <label for="field">Field Events</label>
+            <input type="checkbox" name="field" id="field" value="Field Events">
+            <br>
+            <label for="indoor">Indoor Games</label>
+            <input type="checkbox" name="indoor" id="indoor" value="Indoor Games">
+            <br>
+            <label for="others">Other</label>
+            <input type="text" name="others" id="others">
+        </form>
+    </div>
+    <div>
+        <h5>Guiding principles</h5>
+        <p>In less than 100 words, describe your guiding principles</p>
+        <form>
+            <label for="principles">Your guiding principles:</label>
+            <br>
+            <textarea name="principles" placeholder="Write here" id="principles" rows="5" cols="33"></textarea>
+        </form>
+    </div>
+    <br>
+    <div>
+        <button type="button">Save</button>
+        <button type="submit">Submit</button>
+    </div>
+</body>
+</html>
