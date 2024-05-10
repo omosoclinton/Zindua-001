@@ -1,0 +1,35 @@
+body {
+    font-family: "Ubuntu Sans", sans-serif;
+    min-height: 100vh;
+}
+.header{
+    background-color: azure;
+    text-align: center;
+    padding: 20px;
+
+}
+nav{
+    text-align: center;
+    padding: 20px;
+}
+ .ul-nav{
+    list-style-type: none;
+    display: inline;
+}
+.li-nav{
+    display: inline;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+}
+section{
+    flex: 1;
+}
+ footer {
+    text-align: center;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+ }
