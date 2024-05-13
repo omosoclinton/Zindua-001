@@ -1,0 +1,46 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav article article"
+    "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-gap: 2px;
+    height: 100vh;
+    margin: 0;
+    font-family: cursive;
+
+}
+header, footer, article, nav, div {
+    padding: 20px;
+    background: rgb(161, 163, 152);
+}
+
+#header {
+    grid-area: header;
+    font-family: cursive;
+    font-size: larger;
+    text-align: center;
+}
+#footer {
+    grid-area: footer;
+    text-align: center;
+}
+#main_article {
+    grid-area: article;
+}
+#others {
+    grid-area: others;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(150px, 1fr));
+    grid-gap: 2vw;
+}
+#grid > div {
+    padding: .5em;
+    background: gold;
+    text-align: center;
+}

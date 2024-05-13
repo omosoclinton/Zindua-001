@@ -1,0 +1,27 @@
+body{
+    display: grid;
+    grid-template-areas: "article section";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    height: 100vh;
+    margin: 0;
+}
+
+article{
+    padding: 20px;
+    background: gold;
+}
+
+#article {
+    grid-area: article;
+}
+#section {
+    grid-area: section;
+}
+
+img{
+    width: 700px;
+    height: auto;
+    object-fit: ;
+}
