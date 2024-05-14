@@ -1,13 +1,15 @@
-let x = 34
+let x = 250;
+console.log(x)
 {
-    const k = 3.14
-    console.log(x)
-    let y = 45
-    console.log(y)
-    y = 56
-    console.log(y)
+y = 350;
+console.log(x);
+z = 450;
+console.log(x);
 }
+console.log(x)
 {
-    let z = 10
-    console.log(x * z)
+const g = 9.98;
+console.log(g);
+let x = 550;
+console.log(x);
 }
