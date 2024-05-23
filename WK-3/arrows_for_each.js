@@ -10,7 +10,12 @@
             })
             array_sum.push(sum)
         })
-        return array_sum
+        console.log(array_sum)
+        let total_sum = 0;
+        array_sum.forEach((value) => {
+            total_sum += value
+        })
+        return total_sum;
 
     }
     console.log(getSumOfElements(sample_array))

@@ -7,7 +7,33 @@
 </head>
 <body id="body">
     <div>
-        <p id="par1">This is a paragraph</p>
+        <p id="par1">Please rate the service.</p>
+        <p id="buttons">
+            <label for="very-poor">
+                <input type="radio" class="button" name="rate" value="Very Poor" id="very-poor">Very Poor &#128534
+            </label>
+            <label for="poor">
+                <input type="radio" class="button" name="rate" value="Poor" id="poor">Poor &#128528
+            </label>
+            <label for="ok">
+                <input type="radio" class="button" name="rate" value="OK" id="ok">OK &#128512
+            </label>
+            <label for="good">
+                <input type="radio" class="button" name="rate" value="Good" id="good">Good &#128522
+            </label>
+            <label for="very-good">
+                <input type="radio" name="rate" value="Very Good" id="very-good">Very Good &#128526
+            </label>
+
+        </p>
+        <p>
+            <button id="btnRate" type="submit">Submit</button>
+        </p>
+        <p id="output"></p>
+        <p>
+            <img src="lion.jpg" id="my-image" srcset="">
+            <!-- <img src="lion3.jpg" id="my-image1" srcset=""> -->
+        </p>
     </div>
     <script src="dom.js"></script>
 </body>
