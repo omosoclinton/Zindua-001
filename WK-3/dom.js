@@ -2,7 +2,7 @@
 
     
     const domBody = document.getElementById("body")
-    domBody.style.backgroundColor = "blue"
+    domBody.style.backgroundColor = "teal"
     // const domButton = document.querySelectorAll("p#buttons")
     // domButton.style.fontFamily = 'serif'
     
@@ -26,6 +26,11 @@
 
         })
     })
+
+    function changeStyle() {
+        const btn1 = document.getElementById("magic")
+        btn1.style.color = "violet"
+    }
 
 
     // const domElementsByQuery = document.querySelectorAll("input.button")
