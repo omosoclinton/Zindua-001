@@ -13,8 +13,10 @@
             } else {
                  return ((fibonacciSeq(n - 1) + fibonacciSeq(n - 2)))
             }
+    }  
+    n = 6
+    for (let i= 0; i<n; i++) {
+            fibArray.push(fibonacciSeq(i))
     }
-    for ()
-    fibonacciSeq(6)
     console.log(fibArray)
 }
