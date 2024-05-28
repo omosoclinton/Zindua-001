@@ -1,0 +1,23 @@
+body {
+    background-color: #3e746f;
+}
+.container {
+    background-color: gray;
+    border: 2px solid;
+    height:150px;
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+.login_heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: larger;
+    font-weight: 400;
+}
+.input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

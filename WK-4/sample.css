@@ -1,0 +1,16 @@
+.headingstyle2{
+font-size: 3cm;
+padding:10px;
+color:red;
+margin:4px;
+border:20px purple;
+border-radius:5px;
+}
+.headingstyle{
+font-size: 6cm;
+padding:8px;
+color:green;
+margin:4px;
+border:20px violet;
+border-radius:5px;
+}
