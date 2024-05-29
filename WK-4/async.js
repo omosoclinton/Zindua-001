@@ -1,9 +1,9 @@
 {
     console.log("Hello")
-    setTimeout(worldFor, 2000)
+    setTimeout(worldFor, 10000)
     console.log("do something")
 
     function worldFor(){
-        console.log("Sumn")
+        console.log("10 seconds later")
     }
 }
