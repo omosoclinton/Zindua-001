@@ -8,10 +8,21 @@
         if (!isNaN(string1_array[i])){
             /* for loop to look for special chars */
             console.log("Password has Number")
-            for ()
+            break;
         }else{
             console.log("Password must contain number")
         }
     }
+    for( let i=0; i<string1_array.length; i++) {
+
+    }
+
+
+    for (let i=0; i<userArrayPwd.length; i++){
+        if (!isNaN(userArrayPwd[i])){
+            break;
+        }else if ()  {
+            console.log("Password must contain number")
+        }
 
 }
