@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: antiquewhite;
+    width: 400px;
+    height: 400px;
+    border: 2px solid;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.input {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    border: 2px solid;
+}
+
+.operators {
+    grid-column: 2 / 2;
+    grid-row: 1;
+    border: 2px solid;
+}
+
+.result {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    border: 2px solid;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
