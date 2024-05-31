@@ -8,27 +8,25 @@
 
     
       function getAddition () {
-        let num1 = document.getElementById('num1').value
-        let num2 = document.getElementById('num2').value
-              console.log(num1 + num2)
-        // let result = num1 + num2
-        // console.log(result)
-        // displayResult(result)
+        let num1 = +document.getElementById('num1').value
+        let num2 = +document.getElementById('num2').value
+        result = num1 + num2
+        displayResult(result)
         
     }
-    function getSubtraction (num1, num2) {
+    function getSubtraction () {
         let num1 = document.getElementById('num1').value
         let num2 = document.getElementById('num2').value
         let result = num1 - num2
         displayResult(result)
     }
-    function getDivision (num1, num2){
+    function getDivision (){
         let num1 = document.getElementById('num1').value
         let num2 = document.getElementById('num2').value
         let result = num1 / num2
         displayResult(result)
     }
-    function getMultiplication (num1, num2) {
+    function getMultiplication () {
         let num1 = document.getElementById('num1').value
         let num2 = document.getElementById('num2').value
         let result = num1 * num2
@@ -36,9 +34,7 @@
     }
 
     function displayResult (result) {
-        let num1 = document.getElementById('num1').value
-        let num2 = document.getElementById('num2').value
-        myResult.innerHtml = result
+        myResult.innerHTML = result
     }
 
     myAddition.addEventListener('click', getAddition)
