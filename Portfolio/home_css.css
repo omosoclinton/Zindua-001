@@ -1,3 +1,20 @@
+:root {
+    --main-color:#154E78;
+    --accent-color:#D4AF37;
+}
+
+body {
+    background-color: var(--main-color);
+    color: white;
+}
+a {
+    color: var(--accent-color);
+}
+button {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
 body{
     display: grid;
     grid-template-areas: 
@@ -14,7 +31,7 @@ body{
 }
 header, footer, article, nav, div {
     padding: 20px;
-    background: rgb(161, 163, 152);
+    background: var(--main-color);
 }
 
 #header {
@@ -41,6 +58,6 @@ header, footer, article, nav, div {
 }
 #grid > div {
     padding: .5em;
-    background: gold;
+    background: var(--accent-color);
     text-align: center;
 }
