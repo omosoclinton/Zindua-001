@@ -7,20 +7,17 @@ var arr = ["apple", "mango", "apple",
 
 {
     let arr = ["apple", "mango", "apple", "orange", "mango", "mango"]
-    let arr1 = []
-    let arr2 = []
 
+    function removeDuplicate (thisArr) {
+        let newArr = []
 
-    for (let i=0; i<arr.length; i++) {
-        if (arr[i] == arr[i+1]){
-            arr2.push(arr[i])
-            i++
-        }else{
-            arr1[i] = arr[i]
-        }
+        thisArr.forEach((element) => {
+            if(!newArr.includes(element)) {
+                newArr.push(element)
+            }
+        });
+        return newArr
     }
-
-    console.log(arr1)
-    console.log(arr2)
+    console.log(removeDuplicate(arr))
 
 }
