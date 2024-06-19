@@ -39,19 +39,16 @@
 
     function searchID(){
         lostID = document.getElementById("searchB").value
-        let output = ''
+        let output = `
+                    <div class="output">
+                    <p>Your ID has not been added to our database</p>
+                    </div> `
         for (let storedID of dataRecords) {
             if (storedID.idValue == lostID){
-                output += `
+                output = `
                 <div class="output">
                     <p>Your ID has been found</p>
-                </div>`
-            }else {
-                output += `
-                <div class="output">
-                    <p>Your ID has not been added to our database</p>
-                </div>`
-            }          
+                </div>` }         
         };
         document.getElementById("output").innerHTML = output  
     }
