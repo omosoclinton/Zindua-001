@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './App.css'
 import GetCounter from './components/counter'
+import Mapping from './components/Mapping.jsx'
 // import Car from './components/Car'
 // import isuzu from '../src/assets/isuzu.jpg'
 // import honda from '../src/assets/Honda.jpeg'
@@ -61,6 +62,7 @@ function App() {
       <Car car={carHonda}/>
       <Car car={carSubaru}/> */}
       <GetCounter count={count} increaseFunc={getIncrease} decreaseFunc={getDecrease} resetFunc={getReset}/>
+      <Mapping/>
     </>
   )
 }
