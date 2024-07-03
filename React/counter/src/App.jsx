@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './App.css'
 import GetCounter from './components/counter'
-import Mapping from './components/Mapping.jsx'
+//import Mapping from './components/Mapping.jsx'
 // import Car from './components/Car'
 // import isuzu from '../src/assets/isuzu.jpg'
 // import honda from '../src/assets/Honda.jpeg'
@@ -43,6 +43,20 @@ function App() {
 
   */}
   let [count, setCount] = useState(0)
+  let [x, setX] = useState(20)
+
+  useEffect(()=> {
+    // our code
+
+    console.log("count has changed")
+
+    // returns a cleanup function
+    return (
+      ()=>{
+        console.log("Inside cleanup")
+      }
+    )
+  },[count, x])
  
   function getIncrease (number){
       setCount(++count)
@@ -62,7 +76,8 @@ function App() {
       <Car car={carHonda}/>
       <Car car={carSubaru}/> */}
       <GetCounter count={count} increaseFunc={getIncrease} decreaseFunc={getDecrease} resetFunc={getReset}/>
-      <Mapping/>
+      <button type="button" className='btn btn-primary' onClick={()=>setX(x+1)}>Change X</button>
+      {/* <Mapping/> */}
     </>
   )
 }
