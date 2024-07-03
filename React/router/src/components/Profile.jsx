@@ -1,9 +1,13 @@
 import React from "react";
+import NavBar from "./NavBar";
+import {useParams} from 'react-router-dom'
+
 
 const Profile = () => {
-    // something
+    const params = useParams()
     return (
         <>
+            <NavBar/>
             <h1 className="display-6">Profile Page</h1>
         </>
     )

@@ -7,20 +7,30 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Home from './components/Home.jsx';
 import Profile from './components/Profile.jsx';
 import Settings from './components/settings.jsx';
+import ErrorMsg from './components/ErrorPage.jsx';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path:'/',
-    element:<Home/>
+    element:<Home/>,
+    errorElement:<ErrorMsg/>
   },
   {
     path:'/profile',
     element:<Profile/>
   },
   {
+    path:'/profile/:profileId',
+    element:<Profile/>
+  },
+  {
     path:'/settings',
     element:<Settings/>
+  },
+  {
+    path:'/home',
+    element:<Home/>
   }
 
 ])
