@@ -9,6 +9,7 @@ import Profile from './components/Profile.jsx';
 import Settings from './components/settings.jsx';
 import ErrorMsg from './components/ErrorPage.jsx';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import ProfileChild from './components/ProfileChild.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,13 @@ const router = createBrowserRouter([
   },
   {
     path:'/profile',
-    element:<Profile/>
+    element:<Profile/>,
+    children: [
+      {
+        path:'/profile/:profileId',
+        element:<ProfileChild/>
+      }
+    ]
   },
   {
     path:'/profile/:profileId',
@@ -26,6 +33,10 @@ const router = createBrowserRouter([
   },
   {
     path:'/settings',
+    element:<Settings/>
+  },
+  {
+    path:'/settings/:settingsId',
     element:<Settings/>
   },
   {
