@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <>
             <header className="site-header">
-                <nav className="navbar navbar-expand-md navbar-dark fixed-top" style={{ backgroundColor: 'grey', padding: '15px' }}>
+                <nav className="navbar navbar-expand-md navbar-dark fixed-top" style={{ backgroundColor: 'purple', padding: '15px' }}>
                     <div className="container">
                         <a className="navbar-brand mr-4" href="#" style={{ fontSize: '1.5em' }}>Router Dom</a>
                         <button className="navbar-toggler" type="button" onClick={() => setIsOpen(!isOpen)} data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,6 +22,9 @@ const NavBar = () => {
                                 </div>
                                 <div className="nav-item">
                                     <Link to='/settings' className="mr-4 nav-link" >Settings</Link>
+                                </div>
+                                <div className="nav-item">
+                                    <Link to='/users' className="mr-4 nav-link" >Users</Link>
                                 </div>
                             </div>
                         </div>

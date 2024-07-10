@@ -8,6 +8,8 @@ import Home from './components/Home.jsx';
 import Profile from './components/Profile.jsx';
 import Settings from './components/settings.jsx';
 import ErrorMsg from './components/ErrorPage.jsx';
+import Users from './components/Users.jsx';
+import UserProfile from './components/UserProfile.jsx';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import ProfileChild from './components/ProfileChild.jsx';
 
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
   {
     path:'/home',
     element:<Home/>
+  },
+  {
+    path:'/users',
+    element:<Users/>
+  },
+  {
+    path:'/userprofile',
+    element:<UserProfile/>
   }
 
 ])
