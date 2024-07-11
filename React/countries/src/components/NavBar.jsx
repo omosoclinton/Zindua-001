@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar";
 
 function NavBar () {
+   
     return (
         <>
         <header className="site-header">
@@ -11,6 +13,12 @@ function NavBar () {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
+                    <form className="d-flex input-group w-auto" action="">
+                        <SearchBar/>
+                        <span className="input-group-text border-0" id="search-addon">
+                            <i className="fas fa-search"></i>
+                        </span>
+                    </form>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
@@ -21,7 +29,7 @@ function NavBar () {
                                     Continents
                                 </a>
                                 <ul className="dropdown-menu">
-                                    {/* We will links to continents here */}
+                                    {/* We will have links to continents here */}
                                     <li><Link className="dropdown-item" to='/continent' state={'Africa'} href="#">Africa</Link></li>
                                     <li><Link className="dropdown-item" to='/continent' state={'Antarctica'} href="#">Antarctica</Link></li>
                                     <li><Link className="dropdown-item" to='/continent' state={'Asia'} href="#">Asia</Link></li>
@@ -35,6 +43,8 @@ function NavBar () {
                     </div>
                 </div>
             </nav>
+            <br />
+            <br />
             </header>
         </>
     )

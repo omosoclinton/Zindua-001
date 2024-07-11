@@ -8,6 +8,7 @@ import Home from './assets/pages/Home.jsx'
 import MorePage from './assets/pages/MorePage.jsx';
 import ContinentPage from './assets/pages/ContinentPage.jsx';
 import Neiba from './components/Neiba.jsx';
+import SearchBar from './components/SearchBar.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path:'/neiba',
     element: <Neiba/>
+  },
+  {
+    path:'/search',
+    element: <SearchBar/>
   }
 ])
 

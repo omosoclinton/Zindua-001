@@ -16,7 +16,6 @@ function ContinentData() {
                 })
             })
     }, [])
-    console.log(continentsData)
     return (
         <>
             <div className='container'>
@@ -24,7 +23,6 @@ function ContinentData() {
                     {
                      continentsData.filter(country => country.continents.includes(continentName))
                         .map((country, index)=>{
-                            console.log(country)
                             return (
                                 <CountryCard fetchedData={country}/>
                             )
