@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 function SearchBar () {
 
@@ -48,21 +49,29 @@ function SearchBar () {
     }
     return(
         <>
+            <div>
 
-            <input
-                type="search"
-                placeholder="Search"
-                value={searchItem}
-                onChange={handleInputChange}
-            />
-            {loading && <p>Loading...</p>}
-            {error && <p>There was an error loding user</p>}
-            {!loading && !error && filteredUsers.length === 0
-                ? <p>No users foud</p>
-                : <ul>
-                    {filteredUsers.map(user => <li key={user.id}>{user.name.common}</li>)}
-                </ul>
-            }
+                <input
+                    type="search"
+                    placeholder="Search"
+                    value={searchItem}
+                    onChange={handleInputChange}
+                />
+                {loading && <p>Loading...</p>}
+                {error && <p>There was an error loding country</p>}
+                {!loading && !error && filteredUsers.length === 0
+                    ? <p>No country found</p>
+                    : <ul>
+                        {
+                            filteredUsers.map(user =>
+                                <li key={user.id}>
+                                    <Link to='/country' state={user}>{user.name.common}</Link>
+
+                                </li>
+                            )}
+                    </ul>
+                }
+            </div>
         </>
     )
 }

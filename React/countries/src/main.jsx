@@ -9,7 +9,7 @@ import MorePage from './assets/pages/MorePage.jsx';
 import ContinentPage from './assets/pages/ContinentPage.jsx';
 import Neiba from './components/Neiba.jsx';
 import SearchBar from './components/SearchBar.jsx';
-
+import CountryCard from './components/CountryCard.jsx';
 const router = createBrowserRouter([
   {
     path:'/',
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
   {
     path:'/search',
     element: <SearchBar/>
-  }
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
