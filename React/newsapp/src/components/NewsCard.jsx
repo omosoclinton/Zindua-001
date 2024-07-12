@@ -6,7 +6,7 @@ function NewsCard (){
     const [newsData, setNewsData] = useState([])
 
     useEffect(()=>{
-        fetch('https://newsapi.org/v2/everything?q=tesla&from=2024-06-02&sortBy=publishedAt&apiKey=590f38c5eab44f80a692d4686fca3506')
+        fetch('https://newsapi.org/v2/everything?q=trump&from=2024-07-02&sortBy=publishedAt&apiKey=590f38c5eab44f80a692d4686fca3506')
             .then((response)=>response.json())
             .then((data) => {
                 setNewsData(data.articles)
@@ -26,6 +26,7 @@ function NewsCard (){
                                         description={news.description}
                                         link={news.url}
                                         url_image={news.urlToImage}
+                                        source={news.source}
                                     />
                                 </div>
                             )
